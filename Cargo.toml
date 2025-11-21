@@ -1,0 +1,20 @@
+[package]
+name = "base64urlsafedata-icp"
+version = "0.1.2"
+authors = ["jonathan <jonathanxx997@gmail.com>"]
+edition = "2021"
+description = "Base64 URL-safe data wrapper for Serde with ICP (Internet Computer) support"
+repository = "https://github.com/jonathanxuu/base64urlsafedata-icp"
+keywords = ["base64", "serde", "icp", "internet-computer", "candid", "stable-structures"]
+categories = ["web-programming", "encoding"]
+license = "MPL-2.0"
+readme = "README.md"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+base64 = "0.13"
+serde_json = "1.0"
+ic-stable-structures = "0.5"
+candid = "0.10"
